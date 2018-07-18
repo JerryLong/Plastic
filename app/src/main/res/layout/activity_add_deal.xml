@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.percent.PercentRelativeLayout --><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@android:color/white">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.conduit.plastic.view.banner.BannerView
+                android:id="@+id/main_banners"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:minHeight="150dp"
+                android:visibility="gone"
+                app:image_scale_type="center_crop"
+                app:is_auto_play="true"
+                app:scroll_time="2000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_banners"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/brand_edit"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/shape_solid_edit"
+                            android:focusable="false"
+                            android:hint="品牌"
+                            android:padding="3dp" />
+
+                        <Button
+                            android:id="@+id/brand_btn"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@+id/brand_edit"
+                            android:background="@drawable/selector_btn"
+                            android:text="帮助"
+                            android:textColor="@color/text_white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/product_edit"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/shape_solid_edit"
+                            android:focusable="false"
+                            android:hint="品名"
+                            android:padding="3dp" />
+
+                        <Button
+                            android:id="@+id/product_btn"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@id/product_edit"
+                            android:background="@drawable/selector_btn"
+                            android:text="帮助"
+                            android:textColor="@color/text_white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="标准"
+                    android:textStyle="bold" />
+
+                <com.conduit.plastic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/main_standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:max_select="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/main_quality_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="规格"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/main_quality_two"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/edit_blue_drawable"
+                        android:gravity="center"
+                        android:text="变径"
+                        android:textColor="@drawable/text_btn_colors"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <com.conduit.plastic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/main_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:max_select="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="材质"
+                    android:textStyle="bold" />
+
+
+                <com.conduit.plastic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/main_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:max_select="1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height_44"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/total_edit_txt"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="数量"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/total_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/total_edit_txt"
+                        android:background="@drawable/shape_solid_edit"
+                        android:hint="数量"
+                        android:inputType="phone"
+                        android:padding="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height_44"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/desc_edit_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="描述"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/desc_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/desc_edit_txt"
+                        android:background="@drawable/shape_solid_edit"
+                        android:hint="描述"
+                        android:padding="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height_44"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/stock_edit_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="库存状况"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/stock_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/stock_edit_txt"
+                        android:background="@drawable/shape_solid_edit"
+                        android:focusable="false"
+                        android:hint="库存状况"
+                        android:padding="3dp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/main_search"
+                    style="@style/button"
+                    android:layout_width="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="提交" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView><!--</android.support.percent.PercentRelativeLayout>-->
+</LinearLayout>

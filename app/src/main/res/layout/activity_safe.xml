@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/safe_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        stv:sDividerLineType="both"
+        stv:sLeftTextString="管知账号" />
+    <com.allen.library.SuperTextView
+        android:id="@+id/safe_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sDividerLineType="both"
+        stv:sLeftTextString="我的手机" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/safe_modify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextString="修改密码"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+
+</LinearLayout>

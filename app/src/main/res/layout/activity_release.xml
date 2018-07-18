@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_head"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            stv:sCenterViewGravity="left_center"
+            stv:sLeftBottomTextString="账户:135484685545"
+            stv:sLeftIconHeight="80dp"
+            stv:sLeftIconRes="@drawable/img_two"
+            stv:sLeftIconShowCircle="true"
+            stv:sLeftIconWidth="60dp"
+            stv:sLeftTextString=" "
+            stv:sLeftTopTextString="落羽"
+            stv:sLeftViewGravity="left_center" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString="请输入你要发布的标题"
+            stv:sLeftTextString="标题(必填)" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_article"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString=""
+            stv:sLeftTextString="品名"
+            stv:sRightIconMarginRight="20dp" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString=""
+            stv:sLeftTextString="品牌"
+            stv:sRightIconMarginRight="20dp" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_standard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString=""
+            stv:sLeftTextString="标准"
+            stv:sRightIconMarginRight="20dp" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_spec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString=""
+            stv:sLeftTextString="规格"
+            stv:sRightIconMarginRight="20dp" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_quality"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString=""
+            stv:sLeftTextString="材质"
+            stv:sRightIconMarginRight="20dp" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString="请输入你需要的数量"
+            stv:sLeftTextString="数量" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sCenterTextString="2017-12-11"
+            stv:sLeftTextString="有效期(必填)" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            stv:sDividerLineType="none"
+            stv:sLeftBottomTextString=" "
+            stv:sLeftTextString=" "
+            stv:sLeftTopTextString="基本说明">
+
+            <EditText
+                android:id="@+id/release_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="需求说明（请输入所需产品信息）"
+                android:padding="15dp"
+                android:textSize="14sp" />
+        </com.allen.library.SuperTextView>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_recycler_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            stv:sDividerLineType="both"
+            stv:sLeftBottomTextString=" "
+            stv:sLeftTextString=" "
+            stv:sLeftTopTextString="图片">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/release_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="1dp"
+                android:overScrollMode="never" />
+        </com.allen.library.SuperTextView>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_release"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            stv:sCenterLines="1"
+            stv:sLeftTextString="发布者"
+            stv:sRightTextColor="@color/tab_color_false" />
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_company"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            stv:sCenterLines="1"
+            stv:sLeftTextString="公司"
+            stv:sRightTextColor="@color/tab_color_false" />
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            stv:sCenterLines="1"
+            stv:sLeftTextString="联系电话"
+            stv:sRightTextColor="@color/tab_color_false" />
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/release_release_not"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="匿名发布"
+            stv:sRightTextColor="@color/tab_color_false">
+
+            <RadioGroup
+                android:id="@+id/anonymousGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/anonymous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/anonymous_not"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="否" />
+            </RadioGroup>
+        </com.allen.library.SuperTextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/release_cancel"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                stv:sBackgroundDrawableRes="@drawable/btn_blue_gray"
+                stv:sCenterTextColor="@color/white"
+                stv:sCenterTextSize="16sp"
+                stv:sCenterTextString="修改" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/release_confirm"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                stv:sBackgroundDrawableRes="@drawable/btn_blue_gray"
+                stv:sCenterTextColor="@color/white"
+                stv:sCenterTextSize="16sp"
+                stv:sCenterTextString="预览" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

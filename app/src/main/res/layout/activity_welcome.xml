@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"    android:background="@color/main_bg"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.Space
+        android:id="@+id/top_space"
+        android:layout_width="match_parent"
+
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/top_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_space"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="管知"
+        android:textColor="@color/theme_blue_color"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_txt"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="工业塑胶管路行业大数据" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="管知科技（成都）有限公司" />
+    <TextView
+        android:id="@+id/welcome_phone"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/colorPrimary"
+        android:text="联系电话 13688136811" />
+</RelativeLayout>

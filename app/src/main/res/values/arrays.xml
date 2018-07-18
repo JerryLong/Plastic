@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="broad_array">
+        <item>UPVC</item>
+        <item>CPVC</item>
+        <item>CLEAR PVC</item>
+        <item>ABS</item>
+        <item>PP/FRPP</item>
+        <item>PPH</item>
+        <item>PVDF</item>
+        <item>PTFE</item>
+        <!--<item>HP PP</item>-->
+    </string-array>
+    <string-array name="broad_cn_array">
+        <item>聚氯乙烯</item>
+        <item>氯化聚氯乙烯</item>
+        <!--<item>透明管/板</item>-->
+        <item>透明</item>
+        <item>丙烯晴\n丁二烯 苯二烯</item>
+        <item>聚丙烯</item>
+        <item>改性聚丙烯</item>
+        <item>聚二偏氟乙烯</item>
+        <item>聚四氟乙烯</item>
+        <!--<item>洁净型UPVC\n(超纯水)</item>-->
+        <!--<item>氯化聚氯乙烯\n(日本产)</item>-->
+        <!--<item>洁净型\n聚二偏氟乙烯 (超纯水)</item>-->
+        <!--<item>聚四氧乙烯\n(可溶性)</item>-->
+        <!--<item>HP PP</item>-->
+    </string-array>
+
+
+    <string-array name="texture_array">
+        <item>UPVC</item>
+        <item>CPVC</item>
+        <item>PPH</item>
+        <item>PP/FRPP</item>
+        <item>PVDF</item>
+        <item>CLEAN PVC</item>
+        <item>CLEAR PVC</item>
+        <item>PTFE</item>
+        <item>ABS</item>
+        <item>PFA</item>
+        <item>HT PVC</item>
+        <item>HP PVDF</item>
+        <!--<item>HP PP</item>-->
+    </string-array>
+    <string-array name="texture_cn_array">
+        <item>聚氯乙烯</item>
+        <item>氯化聚氯乙烯</item>
+        <item>改性聚丙烯</item>
+        <item>聚丙烯</item>
+        <item>洁净型UPVC\n(超纯水)</item>
+        <item>透明</item>
+        <!--<item>透明管/板</item>-->
+
+
+        <item>氯化聚氯乙烯\n(日本产)</item>
+        <item>丙烯晴\n丁二烯 苯二烯</item>
+
+        <item>洁净型\n聚二偏氟乙烯\n(超纯水)</item>
+        <item>聚四氟乙烯\n(可溶性)</item>
+        <item>聚四氟乙烯</item>
+        <!--<item>HP PP</item>-->
+    </string-array>
+    <string-array name="standard_array">
+        <item>国标(DIN)</item>
+        <item>美标(SCH/ANSI)</item>
+        <item>英标(BS)</item>
+        <item>日标(JIS)</item>
+    </string-array>
+    <string-array name="productName_array">
+        <item>管材</item>
+        <item>管件</item>
+        <item>阀门</item>
+        <!--<item>板材</item>-->
+        <!--<item>棒材</item>-->
+        <item>胶水</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="area_array">
+        <item>管知优选</item>
+        <item>国外</item>
+        <item>台湾</item>
+        <item>华东</item>
+        <item>华南</item>
+        <item>华北</item>
+        <item>胶水</item>
+    </string-array>
+    <string-array name="stock_array">
+        <item>微量</item>
+        <item>少量</item>
+        <item>正常</item>
+        <item>大量</item>
+        <item>超大量</item>
+    </string-array>
+</resources>

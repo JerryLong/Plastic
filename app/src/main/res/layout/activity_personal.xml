@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.conduit.plastic.view.banner.BannerView
+        android:id="@+id/personal_banners"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="18dp"
+        app:image_scale_type="center_crop"
+        app:is_auto_play="true"
+        app:scroll_time="2000" />
+
+
+
+    <TextView
+        android:id="@+id/personal_head_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_banners"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+
+        android:text="adasdasdasda"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/personal_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+      android:layout_below="@+id/personal_head_tv"
+        android:layout_alignLeft="@+id/personal_head_tv"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/personal_head_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="ada哈哈哈哈asda"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:id="@+id/personal_ren_tv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_circle_bg"
+            android:gravity="center"
+            android:text="认"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:id="@+id/personal_qi_tv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_circle_bg"
+            android:gravity="center"
+            android:text="企"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textSize_16" />
+    </LinearLayout>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/personal_location"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/personal_head_layout"
+        app:sDividerLineType="none"
+        app:sLeftIconRes="@mipmap/ic_location"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="哈哈哈" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/personal_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/personal_location"
+        app:sDividerLineType="none"
+        app:sLeftIconRes="@mipmap/ic_phone"
+        app:sLeftTextColor="@color/colorPrimary"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="135484554996" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/personal_tel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/personal_phone"
+        app:sDividerLineType="none"
+        app:sLeftIconRes="@mipmap/ic_tel"
+        app:sLeftTextColor="@color/colorPrimary"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="aaaaaaaa" />
+</RelativeLayout>

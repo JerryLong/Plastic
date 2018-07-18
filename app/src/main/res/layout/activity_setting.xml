@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/setting_safe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        stv:sDividerLineType="both"
+        stv:sLeftTextString="账号与安全"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/setting_session"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextString="清除图片缓存"
+        stv:sRightIconRes="@mipmap/icon_arrow_right"
+        stv:sRightTextString="300M" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_invitation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        stv:sCenterTextColor="@color/colorPrimary"
+        stv:sCenterTextString="退出登录"
+        stv:sDividerLineType="both" />
+</LinearLayout>

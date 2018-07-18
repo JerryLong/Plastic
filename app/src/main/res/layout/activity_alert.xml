@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        stv:sDividerLineType="both"
+        stv:sLeftTextString="旧密码">
+
+        <EditText
+            android:id="@+id/alert_old"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请输入旧密码"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="14sp" />
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sDividerLineType="both"
+        stv:sLeftTextString="新密码">
+
+        <EditText
+            android:id="@+id/alert_new"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="14sp" />
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sDividerLineType="both"
+        stv:sLeftTextString="确认密码">
+
+        <EditText
+            android:id="@+id/alert_news"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请再次输入新密码"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="14sp" />
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/alert_confirm"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        stv:sBackgroundDrawableRes="@drawable/btn_blue_gray"
+        stv:sCenterTextColor="@color/white"
+        stv:sCenterTextSize="16sp"
+        stv:sCenterTextString="完  成" />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+        <com.conduit.plastic.view.banner.BannerView
+            android:id="@+id/home_top_banners"
+            android:layout_width="match_parent"
+            app:image_scale_type="center_crop"
+            app:is_auto_play="true"
+
+            android:layout_height="140dp"
+            app:scroll_time="2000" />
+
+        <com.conduit.plastic.view.banner.BannerView
+            android:id="@+id/home_bottom_banners"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            app:image_scale_type="center_crop"
+            app:is_auto_play="true"
+
+            android:layout_height="140dp"
+            app:scroll_time="2000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/home_bottom_banners"
+            android:layout_below="@id/home_top_banners"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_nick_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="认"
+                    android:textSize="@dimen/textSize_20" />
+
+                <TextView
+                    android:id="@+id/home_ren_tv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_circle_bg"
+                    android:gravity="center"
+                    android:text="认"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/textSize_16" />
+
+                <TextView
+                    android:id="@+id/home_qi_tv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_circle_bg"
+                    android:gravity="center"
+                    android:text="企"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/textSize_16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/home_company_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="1111111111111认"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/home_brand_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="1111111111111认"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/home_telephone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="1111111111111认"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/home_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="1111111111111认"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/home_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="1111111111111认"
+                android:textSize="@dimen/textSize_16" />
+        </LinearLayout>
+
+</RelativeLayout>

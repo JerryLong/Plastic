@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+        <!--自定义toolbar的title 和subtitle -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_head"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        stv:sCenterViewGravity="left_center"
+        stv:sLeftBottomTextString="账户:135484685545"
+        stv:sLeftIconHeight="80dp"
+        stv:sLeftIconShowCircle="true"
+        stv:sLeftIconWidth="80dp"
+        stv:sLeftTextString=" "
+        stv:sLeftTopTextString="落羽"
+        stv:sLeftViewGravity="left_center"
+        stv:sRightIconRes="@mipmap/icon_arrow_right"
+        stv:sRightTextColor="@color/colorAccent"
+        stv:sRightTextGravity="center"
+        stv:sRightTextString="修改/完善\n个人资料" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_demand"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftIconHeight="30dp"
+        stv:sLeftIconRes="@mipmap/ic_myneed"
+        stv:sLeftIconWidth="30dp"
+        stv:sLeftTextString="我的需求"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_explain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftIconHeight="30dp"
+        stv:sLeftIconRes="@mipmap/ic_use"
+        stv:sLeftIconWidth="30dp"
+        stv:sLeftTextString="使用说明"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_invitation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftIconHeight="30dp"
+        stv:sLeftIconRes="@mipmap/ic_friend"
+        stv:sLeftIconWidth="30dp"
+        stv:sLeftTextString="邀请好友"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftIconHeight="30dp"
+        stv:sLeftIconRes="@mipmap/ic_setting"
+        stv:sLeftIconWidth="30dp"
+        stv:sLeftTextString="设置"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftIconHeight="30dp"
+        stv:sLeftIconRes="@mipmap/ic_opinion"
+        stv:sLeftIconWidth="30dp"
+        stv:sLeftTextString="意见反馈"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tab_mine_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftIconHeight="30dp"
+        stv:sLeftIconRes="@mipmap/ic_contact"
+        stv:sLeftIconWidth="30dp"
+        stv:sLeftTextString="联系我们"
+        stv:sRightIconRes="@mipmap/icon_arrow_right" />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_head"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            stv:sLeftTopTextString="头像"
+            stv:sLeftViewGravity="left_center"
+            stv:sRightIconRes="@mipmap/icon_arrow_right"
+            stv:sRightIconShowCircle="true"
+            stv:sRightTvDrawableHeight="60dp"
+            stv:sRightTvDrawableWidth="60dp" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_nick"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="昵称"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="真实姓名(必填)"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="性别(必填)"
+            stv:sRightTextColor="@color/tab_color_false">
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true" >
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="男" />
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" />
+            </RadioGroup>
+        </com.allen.library.SuperTextView>
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_company"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="公司(必填)"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="地址(必填)"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_tel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="座机"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_qq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="QQ或微信(必填)"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="手机(必填)"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/uinfo_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sLeftTextString="邮箱"
+            stv:sRightTextColor="@color/tab_color_false"
+            stv:sRightTextString="修改" />
+
+        <com.allen.library.SuperTextView
+            android:layout_width="120dp"
+            android:id="@+id/uinfo_confirm"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            stv:sBackgroundDrawableRes="@drawable/btn_blue_gray"
+            stv:sCenterTextString="确定"
+            stv:sCenterTextSize="18sp"
+            stv:sCenterTextColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

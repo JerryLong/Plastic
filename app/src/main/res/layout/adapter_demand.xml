@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/demand_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:src="@mipmap/default_img"
+        android:scaleType="centerCrop"
+      />
+
+
+        <TextView
+            android:id="@+id/demand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toLeftOf="@+id/demand_distance"
+            android:layout_toRightOf="@+id/demand_img"
+            android:text="工业管"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:ellipsize="end"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/demand_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/demand_name"
+            android:layout_below="@+id/demand_name" android:textColor="#333333"
+            android:layout_weight="1"
+            android:text="品牌 | 品名" />
+
+        <TextView
+            android:id="@+id/demand_texture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/demand_logo"
+            android:layout_alignStart="@+id/demand_logo"
+            android:layout_below="@+id/demand_logo" android:textColor="#333333"
+            android:layout_weight="1"
+            android:text="材质 | 规格 | 标准" />
+
+        <TextView
+            android:id="@+id/demand_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/demand_texture"
+            android:layout_alignStart="@+id/demand_texture"
+            android:layout_below="@+id/demand_texture" android:textColor="#333333"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="基本说明：12344444" />
+
+        <TextView
+            android:id="@+id/demand_person"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/demand_name"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/demand_desc" android:textColor="#333333"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/demand_time"
+            android:text="发布人：啊啊啊" />
+
+    <TextView
+        android:id="@+id/demand_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" android:textColor="#333333"
+        android:layout_alignParentRight="true"
+        android:text="100米" />
+
+    <TextView
+        android:id="@+id/demand_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textColor="#333333"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/demand_distance"
+        android:text="8-12" />
+
+    <TextView
+        android:id="@+id/demand_time"
+        android:layout_width="wrap_content" android:textColor="#333333"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/demand_person"
+        android:text="发布人：啊啊啊"
+        android:layout_alignParentRight="true"
+    />
+</RelativeLayout>

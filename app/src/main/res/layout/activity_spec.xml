@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/spec_two"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tag_selector"
+            android:gravity="center"
+            android:text="变径"
+            android:textColor="@drawable/text_colors" />
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/spec_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/spec_confirm"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="40dp"
+            android:background="@drawable/btn_blue_gray"
+            android:text="确\t\t\t定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

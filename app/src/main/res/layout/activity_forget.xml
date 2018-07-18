@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        stv:sLeftTextString="手机号">
+
+        <EditText
+            android:id="@+id/alert_phone"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textSize="14sp" />
+    </com.allen.library.SuperTextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.allen.library.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sDividerLineType="none"
+            stv:sLeftTextString="验证码">
+
+            <EditText
+                android:id="@+id/alert_code"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="请输入验证码"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:textSize="14sp" />
+        </com.allen.library.SuperTextView>
+
+        <Button
+            android:id="@+id/alert_code_btn"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_blue_gray"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sDividerLineType="both"
+        stv:sLeftTextString="新密码">
+
+        <EditText
+            android:id="@+id/alert_new"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="14sp" />
+    </com.allen.library.SuperTextView>
+
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/alert_confirm"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        stv:sBackgroundDrawableRes="@drawable/btn_blue_gray"
+        stv:sCenterTextColor="@color/white"
+        stv:sCenterTextSize="16sp"
+        stv:sCenterTextString="完  成" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/search_confirm"
+        android:layout_weight="1"
+        android:background="@drawable/search_shape"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="搜一搜"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/search_confirm"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        stv:sBackgroundDrawableRes="@drawable/btn_blue_gray"
+        stv:sCenterTextColor="@color/white"
+        stv:sCenterTextSize="16sp"
+        stv:sCenterTextString="搜索" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/tab_color_false"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="3dp"
+        android:hint="请输入检索Tag"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</RelativeLayout>

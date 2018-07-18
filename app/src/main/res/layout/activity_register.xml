@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.Space
+            android:id="@+id/top_space"
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/top_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_space"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="管知"
+            android:textColor="@color/theme_blue_color"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/top_txt_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_txt"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="工业塑胶管路行业大数据" />
+
+        <!--<android.support.v4.widget.Space-->
+        <!--android:id="@+id/middle_space"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@id/top_txt_detail"-->
+        <!--app:layout_heightPercent="5%" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_txt"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <EditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号码"
+
+                android:inputType="phone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+
+                    android:hint="短信验证码"
+
+                    android:inputType="numberDecimal"
+
+                    />
+
+                <Button
+                    android:id="@+id/register_code"
+                    style="@style/button"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/btn_height_36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="获取验证码" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edit_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/register_btn"
+                style="@style/button"
+                android:text="注册" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

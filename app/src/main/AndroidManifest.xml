@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.conduit.plastic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".common.PlasticApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <activity -->
+        <!-- android:name=".ui.splash.SplashActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:launchMode="singleTop" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.main.activity.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.info.InfoEditActivity"
+            android:label="@string/app_edit_info" />
+        <activity android:name=".ui.brand.BrandActivity" />
+        <activity android:name=".ui.brand.Brand2Activity" />
+        <activity android:name=".ui.login.RegisterActivity" />
+        <activity android:name=".ui.login.ForgetActivity" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.setting.SetMsgActivity" />
+        <activity
+            android:name=".ui.info.phone.EditPhoneActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".ui.mine.SettingActivity" />
+        <activity android:name=".ui.mine.OpinionActivity" />
+        <activity android:name=".ui.mine.UserInfoActivity" />
+        <activity android:name=".ui.mine.ImageActivity" />
+        <activity android:name=".ui.release.ReleaseActivity" />
+        <activity android:name=".ui.release.ModifyActivity" />
+        <activity android:name=".ui.release.PreviewActivity" />
+        <activity android:name=".ui.mine.SafeActivity" />
+        <activity android:name=".ui.mine.AlertActivity" />
+        <activity android:name=".ui.mine.NeedsActivity" />
+        <activity android:name=".ui.search.SearchActivity" />
+        <activity android:name=".ui.addbrand.AddBrandActivity" />
+        <activity android:name=".ui.search.HistoryActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1106108291" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+        </activity>
+         <activity android:name=".ui.splash.SplashActivity" />
+        <activity android:name=".ui.area.AreaActivity" />
+        <activity android:name=".ui.seller.SellerActivity" />
+        <activity android:name=".ui.seller.SellerTwoActivity" />
+        <activity
+            android:name=".ui.gallery.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.productname.ProductNameActivity" />
+        <activity android:name=".ui.deal.DealActivity" />
+        <activity android:name=".ui.adddeal.AddDealActivity" />
+        <activity android:name=".ui.deallist.DealListActivity" />
+        <activity android:name=".ui.WebActivity" />
+        <activity android:name=".ui.attribute.SpecActivity" />
+        <activity android:name=".ui.attribute.StandardActivity" />
+        <activity android:name=".ui.attribute.TextureActivity" />
+        <activity android:name=".ui.home.PersonalActivity" />
+        <activity android:name=".ui.attribute.BarActivity" />
+        <activity android:name=".ui.attribute.BoardActivity" />
+        <activity android:name=".ui.release.FinishActivity" />
+        <activity android:name=".ui.mine.ExplanActivity" />
+        <activity android:name=".ui.mine.ContactsActivity"></activity>
+    </application>
+
+</manifest>
